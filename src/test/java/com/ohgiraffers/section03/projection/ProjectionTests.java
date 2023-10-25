@@ -6,7 +6,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.Arrays;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class ProjectionTests {
 
@@ -100,8 +103,63 @@ public class ProjectionTests {
 
     }
 
+    //필요한 것만 추출을 할 수 있으나 엔티티는 아니다.
     @Test
     public void 임베디드_타입_프로젝션_테스트() {
+
+        // when
+        String jpql = "SELECT m.menuInfo FROM embedded_menu m";
+        List<MenuInfo> menuInfoList = entityManager.createQuery(jpql, MenuInfo.class).getResultList();
+
+        // then
+        assertNotNull(menuInfoList);
+        menuInfoList.forEach(System.out::println);
+
+    }
+
+    //스칼라 : 단일값(하나의 숫자, 하나의 문자 등)
+    @Test
+    public void TypeQuery를_이용한_스칼라_타입_프로젝션_테스트() {
+
+        // when
+        String jpql = "SELECT c.categoryName FROM category_section03 c";
+        List<String> categoryNameList = entityManager.createQuery(jpql, String.class).getResultList();
+
+        // then
+        assertNotNull(categoryNameList);
+        categoryNameList.forEach(System.out::println);
+
+    }
+
+    @Test
+    public void Query를_이용한_스칼라_타입_프로젝션_테스트(){
+
+        // when
+        String jpql = "SELECT c.categoryCode, c.categoryName FROM category_section03 c";
+        //categoryCode와 categoryName를 반환받을 수 있는 타입이 없기 때문에 우선 배열 형태로 받는다.
+        List<Object[]> categoryList = entityManager.createQuery(jpql).getResultList();
+                                                        //타입을 지정할 수 없어서 jpql만 보낸다.
+
+        // then
+        //반환 값 출력
+        assertNotNull(categoryList);
+        categoryList.forEach(row -> { //람다식 작성, 하나하나 반복하는 것이 한 행, 한 행
+            Arrays.stream(row).forEach(System.out::println);
+        });
+
+    }
+
+    //Object[]타입이 아닌
+    @Test
+    public void new_명령어를_활용한_프로젝션_테스트(){
+
+        // when                                                           매개변수 생성자 호출
+        String jpql = "SELECT new com.ohgiraffers.section03.projection.CategoryInfo(c.categoryCode, c.categoryName) FROM category_section03 c";
+        List<CategoryInfo> categoryList = entityManager.createQuery(jpql, CategoryInfo.class).getResultList();
+
+        // then
+        assertNotNull(categoryList);
+        categoryList.forEach(System.out::println);
 
     }
 

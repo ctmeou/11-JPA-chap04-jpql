@@ -9,22 +9,18 @@ public class EmbeddMenu {
 
     @Id
     private int menuCode;
-    private String menuName;
-    private int menuPrice;
-    //메뉴 입장에서는 하나의 메뉴 당 하나의 카테고리
-    @ManyToOne
-    @JoinColumn(name = "categoryCode")
-    private BiDirectionCategory category;
+    @Embedded //PK가 아니어도 내장 타입을 사용할 수 있다.
+    private MenuInfo menuInfo;
+    private int categoryCode;
     private String orderableStatus;
 
     public EmbeddMenu() {
     }
 
-    public EmbeddMenu(int menuCode, String menuName, int menuPrice, BiDirectionCategory category, String orderableStatus) {
+    public EmbeddMenu(int menuCode, MenuInfo menuInfo, int categoryCode, String orderableStatus) {
         this.menuCode = menuCode;
-        this.menuName = menuName;
-        this.menuPrice = menuPrice;
-        this.category = category;
+        this.menuInfo = menuInfo;
+        this.categoryCode = categoryCode;
         this.orderableStatus = orderableStatus;
     }
 
@@ -36,28 +32,20 @@ public class EmbeddMenu {
         this.menuCode = menuCode;
     }
 
-    public String getMenuName() {
-        return menuName;
+    public MenuInfo getMenuInfo() {
+        return menuInfo;
     }
 
-    public void setMenuName(String menuName) {
-        this.menuName = menuName;
+    public void setMenuInfo(MenuInfo menuInfo) {
+        this.menuInfo = menuInfo;
     }
 
-    public int getMenuPrice() {
-        return menuPrice;
+    public int getCategoryCode() {
+        return categoryCode;
     }
 
-    public void setMenuPrice(int menuPrice) {
-        this.menuPrice = menuPrice;
-    }
-
-    public BiDirectionCategory getCategory() {
-        return category;
-    }
-
-    public void setCategory(BiDirectionCategory category) {
-        this.category = category;
+    public void setCategoryCode(int categoryCode) {
+        this.categoryCode = categoryCode;
     }
 
     public String getOrderableStatus() {
@@ -70,11 +58,10 @@ public class EmbeddMenu {
 
     @Override
     public String toString() {
-        return "BiDirectionMenu{" +
+        return "EmbeddMenu{" +
                 "menuCode=" + menuCode +
-                ", menuName='" + menuName + '\'' +
-                ", menuPrice=" + menuPrice +
-                ", category=" + category +
+                ", menuInfo=" + menuInfo +
+                ", categoryCode=" + categoryCode +
                 ", orderableStatus='" + orderableStatus + '\'' +
                 '}';
     }
