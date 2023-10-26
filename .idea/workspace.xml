@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fefe598-adc9-47b8-acfc-f6b30239aba7" name="Changes" comment="10/26 himedia 11.JPA - 04.jpql">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section08/namedquery/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section08/namedquery/NamedQueryTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +236,7 @@
       <updated>1698201669277</updated>
       <workItem from="1698201670325" duration="12258000" />
       <workItem from="1698217386228" duration="696000" />
-      <workItem from="1698278696731" duration="8946000" />
+      <workItem from="1698278696731" duration="9598000" />
     </task>
     <task id="LOCAL-00001" summary="10/25 himedia 11.JPA - 04.jpql">
       <option name="closed" value="true" />
@@ -281,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698284809138</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="10/26 himedia 11.JPA - 04.jpql">
+      <option name="closed" value="true" />
+      <created>1698288032738</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698288032738</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

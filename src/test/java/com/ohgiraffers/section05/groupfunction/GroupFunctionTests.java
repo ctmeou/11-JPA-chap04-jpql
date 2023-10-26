@@ -68,8 +68,9 @@ public class GroupFunctionTests {
         String jpql = "SELECT SUM(m.menuPrice) FROM menu_section05 m WHERE m.categoryCode = :categoryCode";
 
         // then
+        //여기에서 차이는 long 기본 자료형일 때와 래퍼 클래스 Long 객체일 때의 차이를 알기 위해서이고, long은 null을 담을 수 없지만, Long은 null을 담을 수 있다.
         assertThrows(NullPointerException.class, () -> { //exception이 발생하기 때문에 작성하고,
-        long sumOfPrice = entityManager.createQuery(jpql, Long.class)
+            long sumOfPrice = entityManager.createQuery(jpql, Long.class)
                 .setParameter("categoryCode", categoryCodeParameter) //파라미터는 카테고리코드로 보낸다.
                 .getSingleResult(); //null이 값으로 반환될 것이라 exception 발생
         });
