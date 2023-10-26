@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fefe598-adc9-47b8-acfc-f6b30239aba7" name="Changes" comment="10/26 himedia 11.JPA - 04.jpql">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6fefe598-adc9-47b8-acfc-f6b30239aba7" name="Changes" comment="10/26 himedia 11.JPA - 04.jpql" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,12 +35,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ctmeou"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ctmeou&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -61,26 +59,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/lecture/11_jpa/lecture-source/chap04-jpql/src/test/java/com/ohgiraffers/section07/subquery",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/lecture/11_jpa/lecture-source/chap04-jpql/src/test/java/com/ohgiraffers/section07/subquery&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "oracle"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\lecture\11_jpa\lecture-source\chap04-jpql\src\test\java\com\ohgiraffers\section07\subquery" />
@@ -95,7 +93,31 @@
       <recent name="com.ohgiraffers.section02.parameter" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NamedQueryTests.네임드쿼리를_이용한_조회_테스트">
+  <component name="RunManager" selected="Gradle.GroupFunctionTests.count를_제외한_다른_그룹함수의_조회결과가_없는_경우_테스트">
+    <configuration name="GroupFunctionTests.count를_제외한_다른_그룹함수의_조회결과가_없는_경우_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.ohgiraffers.section05.groupfunction.GroupFunctionTests.count를_제외한_다른_그룹함수의_조회결과가_없는_경우_테스트&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="JoinTests.세타조인을_이용한_조회_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -218,10 +240,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.NamedQueryTests.네임드쿼리를_이용한_조회_테스트" />
+        <item itemvalue="Gradle.GroupFunctionTests.count를_제외한_다른_그룹함수의_조회결과가_없는_경우_테스트" />
         <item itemvalue="Gradle.NamedQueryTests.동적쿼리를_이용한_조회_테스트" />
         <item itemvalue="Gradle.SubqueryTests.서브쿼리를_이용한_메뉴_조회_테스트" />
-        <item itemvalue="Gradle.JoinTests.페치조인을_이용한_조회_테스트" />
         <item itemvalue="Gradle.JoinTests.세타조인을_이용한_조회_테스트" />
       </list>
     </recent_temporary>
@@ -237,6 +258,7 @@
       <workItem from="1698201670325" duration="12258000" />
       <workItem from="1698217386228" duration="696000" />
       <workItem from="1698278696731" duration="9598000" />
+      <workItem from="1698288393461" duration="6033000" />
     </task>
     <task id="LOCAL-00001" summary="10/25 himedia 11.JPA - 04.jpql">
       <option name="closed" value="true" />
@@ -286,11 +308,38 @@
       <option name="project" value="LOCAL" />
       <updated>1698288032738</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="10/26 himedia 11.JPA - 04.jpql">
+      <option name="closed" value="true" />
+      <created>1698289386354</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698289386354</updated>
+    </task>
+    <task id="LOCAL-00008" summary="10/26 himedia 11.JPA - 04.jpql">
+      <option name="closed" value="true" />
+      <created>1698296253611</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698296253611</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="10/25 himedia 11.JPA - 04.jpql" />
