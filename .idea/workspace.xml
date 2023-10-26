@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fefe598-adc9-47b8-acfc-f6b30239aba7" name="Changes" comment="10/26 himedia 11.JPA - 04.jpql">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section06/join/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section06/join/JoinTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section06/join/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section07/subquery/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section07/subquery/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section07/subquery/SubqueryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section08/namedquery/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohgiraffers/section08/namedquery/NamedQueryTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
@@ -95,61 +91,14 @@
       <recent name="C:\lecture\11_jpa\lecture-source\chap04-jpql\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ohgiraffers.section08.namedquery" />
       <recent name="com.ohgiraffers.section05.groupfunction" />
       <recent name="com.ohgiraffers.section04.paging" />
       <recent name="com.ohgiraffers.section03.projection" />
       <recent name="com.ohgiraffers.section02.parameter" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SubqueryTests.서브쿼리를_이용한_메뉴_조회_테스트">
-    <configuration name="JoinTests.외부조인을_이용한_조회_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.ohgiraffers.section06.join.JoinTests.외부조인을_이용한_조회_테스트&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="JoinTests.컬렉션조인을_이용한_조회_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.ohgiraffers.section06.join.JoinTests.컬렉션조인을_이용한_조회_테스트&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.NamedQueryTests.네임드쿼리를_이용한_조회_테스트">
     <configuration name="JoinTests.세타조인을_이용한_조회_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -198,6 +147,54 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="NamedQueryTests.동적쿼리를_이용한_조회_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.ohgiraffers.section08.namedquery.NamedQueryTests.동적쿼리를_이용한_조회_테스트&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="NamedQueryTests.네임드쿼리를_이용한_조회_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.ohgiraffers.section08.namedquery.NamedQueryTests.네임드쿼리를_이용한_조회_테스트&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="SubqueryTests.서브쿼리를_이용한_메뉴_조회_테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -224,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NamedQueryTests.네임드쿼리를_이용한_조회_테스트" />
+        <item itemvalue="Gradle.NamedQueryTests.동적쿼리를_이용한_조회_테스트" />
         <item itemvalue="Gradle.SubqueryTests.서브쿼리를_이용한_메뉴_조회_테스트" />
         <item itemvalue="Gradle.JoinTests.페치조인을_이용한_조회_테스트" />
         <item itemvalue="Gradle.JoinTests.세타조인을_이용한_조회_테스트" />
-        <item itemvalue="Gradle.JoinTests.컬렉션조인을_이용한_조회_테스트" />
-        <item itemvalue="Gradle.JoinTests.외부조인을_이용한_조회_테스트" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +239,7 @@
       <updated>1698201669277</updated>
       <workItem from="1698201670325" duration="12258000" />
       <workItem from="1698217386228" duration="696000" />
-      <workItem from="1698278696731" duration="5838000" />
+      <workItem from="1698278696731" duration="8946000" />
     </task>
     <task id="LOCAL-00001" summary="10/25 himedia 11.JPA - 04.jpql">
       <option name="closed" value="true" />
@@ -276,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698282249873</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="10/26 himedia 11.JPA - 04.jpql">
+      <option name="closed" value="true" />
+      <created>1698284809138</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698284809138</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
