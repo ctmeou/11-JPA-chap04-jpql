@@ -48,6 +48,7 @@ public class GroupFunctionTests {
 
         // when             //count이기 때문에 오류가 발생하는 일은 없음 = 0이어도 count는 0이기 때문
         String jpql = "SELECT COUNT(m.menuPrice) FROM menu_section05 m WHERE m.categoryCode = :categoryCode";
+        //:categoryCode는 파라미터이고 실행 시에 값을 넘겨줄 수 있는 공간, categoryCodeValue의 값에 따라서 :categoryCode의 값이 동적으로 변경된다.
         long countOfMenu = entityManager.createQuery(jpql, Long.class) //반환 값이 정수면 Long 타입으로 작성
                 .setParameter("categoryCode", categoryCodeParameter)
                 .getSingleResult();
