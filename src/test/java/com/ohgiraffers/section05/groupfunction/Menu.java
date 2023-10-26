@@ -1,25 +1,27 @@
-package com.ohgiraffers.section03.projection;
+package com.ohgiraffers.section05.groupfunction;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-//embedded : 포함된다
-@Entity(name = "embedded_menu")
+@Entity(name = "menu_section05")
 @Table(name = "tbl_menu")
-public class EmbeddMenu {
+public class Menu {
 
     @Id
     private int menuCode;
-    @Embedded //PK가 아니어도 내장 타입을 사용할 수 있다.
-    private MenuInfo menuInfo;
+    private String menuName;
+    private int menuPrice;
     private int categoryCode;
     private String orderableStatus;
 
-    public EmbeddMenu() {
+    public Menu() {
     }
 
-    public EmbeddMenu(int menuCode, MenuInfo menuInfo, int categoryCode, String orderableStatus) {
+    public Menu(int menuCode, String menuName, int menuPrice, int categoryCode, String orderableStatus) {
         this.menuCode = menuCode;
-        this.menuInfo = menuInfo;
+        this.menuName = menuName;
+        this.menuPrice = menuPrice;
         this.categoryCode = categoryCode;
         this.orderableStatus = orderableStatus;
     }
@@ -32,12 +34,20 @@ public class EmbeddMenu {
         this.menuCode = menuCode;
     }
 
-    public MenuInfo getMenuInfo() {
-        return menuInfo;
+    public String getMenuName() {
+        return menuName;
     }
 
-    public void setMenuInfo(MenuInfo menuInfo) {
-        this.menuInfo = menuInfo;
+    public void setMenuName(String menuName) {
+        this.menuName = menuName;
+    }
+
+    public int getMenuPrice() {
+        return menuPrice;
+    }
+
+    public void setMenuPrice(int menuPrice) {
+        this.menuPrice = menuPrice;
     }
 
     public int getCategoryCode() {
@@ -58,9 +68,10 @@ public class EmbeddMenu {
 
     @Override
     public String toString() {
-        return "EmbeddMenu{" +
+        return "Menu{" +
                 "menuCode=" + menuCode +
-                ", menuInfo=" + menuInfo +
+                ", menuName='" + menuName + '\'' +
+                ", menuPrice=" + menuPrice +
                 ", categoryCode=" + categoryCode +
                 ", orderableStatus='" + orderableStatus + '\'' +
                 '}';
