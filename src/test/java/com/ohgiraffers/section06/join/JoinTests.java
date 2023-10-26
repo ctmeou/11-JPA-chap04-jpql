@@ -87,7 +87,7 @@ public class JoinTests {
 
     //cross join 모든 경우를 join해서 반환
     @Test
-    public void 세타조인을_이용한_조회_테스트() { //세타조인 = cross join
+    public void 세타조인을_이용한_조회_테스트() { //세타조인 = cross join : 두 테이블의 모든 행의 가능한 조합을 반환한다.(카테이션 곱)
 
         // when
         String jpql = "SELECT c.categoryName, m.menuName FROM category_section06 c, menu_section06 m";
